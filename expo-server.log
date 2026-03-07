@@ -1,0 +1,18 @@
+
+> car-finder-rn@1.0.0 start
+> expo start --tunnel --port 8082
+
+Starting project at F:\Marc\Marc\DevWeb\Mobile\car-finder-rn
+Starting Metro Bundler
+Tunnel connected.
+Tunnel ready.
+Waiting on http://localhost:8082
+Logs for your project will appear below.
+Android .\index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Android Bundled 1666ms index.ts (721 modules)
+iOS .\index.ts ▓░░░░░░░░░░░░░░░  7.7% (11/46)
+iOS .\index.ts ▓▓░░░░░░░░░░░░░░ 15.3% ( 94/240)
+iOS .\index.ts ▓▓▓▓▓▓▓░░░░░░░░░ 44.1% (308/464)
+iOS .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 82.0% (508/561)
+iOS .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 95.4% (628/643)
+iOS Bundled 20730ms index.ts (720 modules)

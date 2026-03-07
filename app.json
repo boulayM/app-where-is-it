@@ -1,30 +1,53 @@
 {
   "expo": {
-    "name": "car-finder-rn",
-    "slug": "car-finder-rn",
+    "name": "WHERE IS IT ?",
+    "slug": "where-is-it",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/where-is-it-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash-neutral-v2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ececec"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Votre position est utilisee pour enregistrer et retrouver un emplacement.",
+        "NSCameraUsageDescription": "Autorise l app a prendre une photo pour memoriser visuellement un emplacement."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
+        "foregroundImage": "./assets/where-is-it-android-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "monochromeImage": "./assets/where-is-it-android-monochrome.png"
       },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ],
       "predictiveBackGestureEnabled": false
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Autorise l app a acceder a votre position pour retrouver un emplacement."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Autorise l app a prendre une photo pour memoriser visuellement un emplacement."
+        }
+      ]
+    ],
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/where-is-it-favicon.png"
     }
   }
 }
