@@ -7,7 +7,7 @@
     "icon": "./assets/where-is-it-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-neutral-v2.png",
+      "image": "./assets/where-is-it-android-foreground.png",
       "resizeMode": "contain",
       "backgroundColor": "#ececec"
     },
@@ -28,11 +28,17 @@
       "permissions": [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION",
-        "CAMERA"
+        "CAMERA",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
       ],
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.marcboulay.whereisit"
     },
     "plugins": [
+      "expo-router",
       [
         "expo-location",
         {
@@ -48,6 +54,12 @@
     ],
     "web": {
       "favicon": "./assets/where-is-it-favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c5b49b6b-f124-4859-9d6a-ee8d1393c8c1"
+      }
+    },
+    "owner": "marcboulay"
   }
 }
