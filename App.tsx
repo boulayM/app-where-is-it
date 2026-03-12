@@ -35,7 +35,8 @@ import { useSpotCamera } from "./src/hooks/useSpotCamera";
 import { useSpots } from "./src/hooks/useSpots";
 
 const INTRO_SKIP_KEY = "intro_skip_v1";
-const APP_SHARE_URL = "https://mabdev.onrender.com";
+const APP_SHARE_URL =
+  "https://github.com/boulayM/app-where-is-it/releases/latest/download/where-is-it-v1.0.0.apk";
 
 function formatDistance(meters: number | null) {
   if (meters === null) return "--";
